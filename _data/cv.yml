@@ -2,96 +2,95 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Sidong Zhang
     - name: Languages
-      value: English, German
+      value: English, Mandarin
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Doctor of Philosophy
+      institution: UMass Amherst’s College of Information and Computer Sciences, Amherst, MA, USA
+      year: Sep. 2020 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Teaching assistant of graduate level CS 589 machine learning and CS 651 optimization class
+        - Research assistant in Information Fusion lab, currently funded by an NIH RO3
+    - title: Master of Science
+      institution: UMass Amherst’s College of Information and Computer Sciences, Amherst, MA, USA
+      year: Sep. 2018 - Jan. 2021
+    - title: Bachelor of Engineering
+      institution: Nanjing University, Software Institute, Nanjing, China
+      year: Sep. 2018 - Jan. 2021
 
 - title: Experience
   type: time_table
+
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+
+    - title: Longitudinal Multimodal Modeling for Alzheimer’s Early Detection in the Wild
+      institution: UMass Amherst’s College of Information and Computer Sciences
+      year: Sep. 2020 - present
+      description: 
+        - We work on datasets from ANDI and UK Biobank
+        - We preprocessed MRI for latent representation features via a mutual information maximizing encoder
+        - We designed training pipelines that improve validation stability and interpretability
+        - Our current model forecasts Alzheimer’s 24 months in advance with an F1 score of 0.821 on a 3-label task
+        - We are experimenting multimodal models fusing time series patient records with brain image features
+        - We are introducing transfer learning and meta learning to build adaptive model working on multi-source datasets
+        - We are researching on time series models that can precisely capture the disease transition time
+        - Current result was presented in UMASS Initiative on Neurosciences Multidisciplinary Poster Conference for Neuroscience, Computer Science, and Engineering (Nov. 2021)
+        - Current result was presented in the poster session in New England Computer Vision Workshop (Dec. 2022)
+        - Current result is in submission to Journal of Neuroscience
+
+    - title: "FuseBox: Stage-Adjustable Multimodal Fusion"
+      institution: UMass Amherst’s College of Information and Computer Sciences
+      year: Apr. 2023 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - The project originated from the observation that the choice of fusion point in multimodal research matters when utilizing unimodal pretrained models, i.e. early fusion, late fusion or intermediate layers fusion
+        - We work on a universal and model-agnostic approach to automatically select layers from unimodal pretrained models and compose informative fusion representations
+        - We selected layers based on an approximate maximization of conditional mutual information across modalities
+        - We are researching on other submodular or approximately submodular functions as approximate maximization target on selecting layers from unimodal pretrained pipelines
+
+    - title: Multimodal Fusion for Multimedia Analysis
+      institution: UMass Amherst’s College of Information and Computer Sciences & Dolby
+      year: Jun. 2023 - present
       description:
-        - Description 1.
-        - Description 2.
+        - This project is in collaboration with Dolby on multimodal speech separation
+        - We worked on a multimodal dataset of video and audio, The Grid Audio-Visual Speech Corpus
+        - We added a frequency based loss to identify male and female speakers besides the traditional time domain loss
+        - The new loss brings an improvement of 3.25% on SDRi
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: "HyperFuse: Multimodal Fusion via Hypernetwork"
+      institution: UMass Amherst’s College of Information and Computer Sciences
+      year: Sep. 2022 - present
       description:
+        - We designed a hypernet structure to add multimodal forward passing support to existing neural networks models consisting of linear layers and convolutional layers
+        - The HyperFuse structure gained performance improvements on CMU-MOSEI, AV-MNIST and M3A Financial data
+        - Current result is in submission to CVPR 2024
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Information Bottleneck algorithm application on brain MR images
+      institution: UMass Amherst’s College of Information and Computer Sciences
+      year: Oct. 2019 – Apr. 2020
+      description:
+        - The project worked on ANDI brain MR images
+        - The project experimented mutual information lower bound approach in information bottleneck algorithm with variational mutual information upper bound
+        - The result was reported as my Master Thesis
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Clustered Vertical Attention for Irregular Time Series Modelling Amherst, MA, USA
+      institution: UMass Amherst’s College of Information and Computer Sciences
+      year: Feb. 2019 - May. 2019
+      description:
+        - We worked on PhysioNet Challenge 2012 data set
+        - We improved the prediction accuracy of the in-hospital survival of ICU patients via existing imputation methods
+        - We ran Minimum Spanning Tree algorithm to determine the most correlated imputed clusters
+        - We trained separate Attention models for clusters and predicted on a Long Short-term Memory Attention model
+        - The model got accuracy improvements of 1.5%, 1.3% and 1.8% on 3 different imputation methods
+        - Results were submitted to ICML 2019 TimeSeriesWorkshop
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Skill
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Languages: English (Proficient), Mandarin (Native)
+    - Programming language: Java, Python, C, Lisp, Markdown, Latex
+    - Development tools: Pytorch
+

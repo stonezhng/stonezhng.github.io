@@ -2,25 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.cics.umass.edu/research/group/information-fusion-lab'>Information Fusion Lab @UMass Amherst CICS</a>.<!-- Address. Contacts. Moto. Etc.-->
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: avatar-sqaure.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Computer Science Building</p>
+    <p>Graduate Lab CS254</p>
+    <p>Amherst, MA 01002</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Sidong Zhang, a Ph.D student in the [Information Fusion Lab](https://www.cics.umass.edu/research/group/information-fusion-lab) at College of Information and Computer Sciences, UMass Amherst, advised by [Prof. Madalina Fiterau](https://www.cics.umass.edu/people/fiterau-brostean-madalina). I am the teaching assistant of graduate level CS 651 optimization class. I also work as a research assistant currently funded by an NIH RO3 on Alzheimer's early detection. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My primary research interests are **Computer Vision**, **Multimodal Learning**, **information theory**, and **Deep Learning in Healthcare**. I am also interested in Optimization, and currently self-learning normalizing flows and optimal transport. My primary research goal is to build interpretable mutlimdodal models based on solid math and being applicable to real-world high dimensional data, like the [ADNI](https://adni.loni.usc.edu/) and [UK Biobank](https://ukbiobank.ac.uk/) data I am currently working on. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In my spare time, I love running and building gumpla models :)
+
