@@ -28,6 +28,7 @@ Let us assume the local file is organized in this way:
 │   └── ...  
 ├── 📄 metadata.jsonl  
 ├── 📁 second_img 
+
     ├── img0.npy  
     ├── img1.npy  
     └── ...   
@@ -42,6 +43,7 @@ Let us assume the local file is organized in this way:
 │   └── ...  
 ├── 📄 metadata.jsonl  
 ├── 📁 second_img 
+
     ├── img0.npy  
     ├── img1.npy  
     └── ...  
@@ -56,6 +58,7 @@ Let us assume the local file is organized in this way:
 │   └── ...  
 ├── 📄 metadata.jsonl  
 ├── 📁 second_img 
+
     ├── img0.npy  
     ├── img1.npy  
     └── ...  
@@ -289,6 +292,7 @@ Some explanation
 │   └── ...   
 └── 📄 train.py  
 📁 val 
+
 ├── 📁 first_img  
 │   ├── img0.npy  
 │   ├── img1.npy  
@@ -322,7 +326,7 @@ using `huggingface-cli login` and your access tokens.
 
 Then, suppose all the three folders are in a folder named `paired_mnist`. In this `paired_mnist` folder run the following script:
 
-```Python
+```python
 from datasets import load_dataset
 from datasets import DatasetDict
 
