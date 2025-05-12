@@ -10,7 +10,7 @@ categories: coding
 
 HuggingFace has a whole system to reformat the uploaded dataset. If you do not follow it you bascially can just use it like an online drive, but if you follow all the requirements to upload your dataset formally it can basically automatically convert your data to parquet format, and generate a fancy dataset card, as well as the croissant metafile, as the meta information of the dataset. 
 
-I want to use the ImageFolder format from the two formats supported by HuggingFace. However, when searching on how to do this from scratch I do feel the offical tutorials are quite limited, like the examples are mostly about data of strings or images. It is 2025 and many are using preprocessed features from the raw data, so the inputs may be just a 512 or 768 dim vector. Instructions on uploading these types of data are not that clear so I write to record my own experience. My final uploaded dataset can be found here: https://huggingface.co/datasets/stonezh/PairedMNIST
+I want to use the ImageFolder format from the two formats supported by HuggingFace. However, when searching on how to do this from scratch I do feel the offical tutorials are quite limited, like the examples are mostly about data of strings or images. It is 2025 and many are using preprocessed features from the raw data, so the inputs may be just a 512 or 768 dim vector. Instructions on uploading these types of data are not that clear so I write to record my own experience. My final uploaded dataset can be found here:  <https://huggingface.co/datasets/stonezh/PairedMNIST>
 
 
 # Local File Structure
@@ -335,7 +335,14 @@ ddict = DatasetDict({"train": load_dataset("train", data_dir="train")["train"], 
 ddict.push_to_hub("stonezh/PairedMNIST")  # <- I am using my online repo id here
 ```
 
-
+# Reference
+ * <https://huggingface.co/docs/datasets/en/about_dataset_features> : Official explanation on types of data features suppported by HuggingFace
+ * <https://huggingface.co/docs/datasets/en/image_dataset> : HuggingFace official image dataset creation tutorial, helpful if you are uploading raw images, but if uploading just latent features then `datasets.Image()` does not work
+ * <https://huggingface.co/docs/datasets/en/dataset_script> : Another official one making string dataset. 
+ * <https://huggingface.co/datasets/fusing/fill50k/blob/main/fill50k.py> : A nonoffical HuggingFace dataset with uploading codes
+ * <http://github.com/huggingface/diffusers/issues/6077> : Github discussion based on the previous dataset
+ * <https://github.com/huggingface/datasets/blob/main/templates/new_dataset_script.py> : Official Github repo making string dataset
+ * <https://discuss.huggingface.co/t/pushing-multiple-splits-of-dataset-to-a-single-repo-of-hub/15526> : How to upload multiple splits in one `push_to_hub` function call. If you do it separately, like using 3 `push_to_hub` function calls for the train/val/test split, the later one just overwrite the previous one so you can only get one split in the end...
 
 
 
