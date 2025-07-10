@@ -3,7 +3,7 @@ layout: page
 title: Audio-Visual Speech Separation via Bottleneck Iterative Network 
 img: assets/img/avssbin/MultimodalFusion4MultimediaAnalysis.png
 importance: 1
-category: academic
+category: Academic
 bibliography:
 - /assets/ref/avssbin.bib
 ---
