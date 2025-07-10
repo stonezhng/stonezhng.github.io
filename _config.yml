@@ -164,11 +164,11 @@ disqus_shortname: al-folio # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
-  # news:
-  #   defaults:
-  #     layout: post
-  #   output: true
-  #   permalink: /news/:path/
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
   projects:
     output: true
     permalink: /projects/:path/
@@ -182,6 +182,79 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+  last_name: [Zhang]
+  first_name: [Sidong]
+
+  style: apa
+  locale: en
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  # Note: if you have latex math in your bibtex, the latex filter
+  # preprocessing may conflict with MathJAX if the latter is enabled.
+  # See https://github.com/alshedivat/al-folio/issues/357.
+  bibtex_filters: [latex, smallcaps, superscript]
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_link: Details
+
+  query: "@*"
+  group_by: year
+  group_order: descending
+
+# Display different badges withs stats for your publications
+# Customize badge behavior in _layouts/bib.liquid
+enable_publication_badges:
+  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+
+# Filter out certain bibtex entry keywords used internally from the bib output
+filtered_bibtex_keywords:
+  [
+    abbr,
+    abstract,
+    additional_info,
+    altmetric,
+    annotation,
+    arxiv,
+    award,
+    award_name,
+    bibtex_show,
+    blog,
+    code,
+    google_scholar_id,
+    html,
+    inspirehep_id,
+    pdf,
+    poster,
+    preview,
+    selected,
+    slides,
+    supp,
+    video,
+    website,
+  ]
+
+# Maximum number of authors to be shown for each publication (more authors are visible on click)
+max_author_limit: 3 # leave blank to always show all authors
+more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
+
+# Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
+enable_publication_thumbnails: true
+
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
