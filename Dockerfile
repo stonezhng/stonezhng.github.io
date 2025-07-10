@@ -59,6 +59,7 @@ ADD Gemfile /srv/jekyll
 
 # set the working directory
 WORKDIR /srv/jekyll
+RUN bundle config build.nokogiri --use-system-libraries
 
 # install jekyll and dependencies
 RUN gem install --no-document jekyll bundler
