@@ -4,42 +4,43 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Sidong
+middle_name: 
 last_name: Zhang
-contact_note: >
-  Mostly reachable via email.
+email: sidongzhang@umass.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Hi this is Sidong (or you can just call me Stone). I am recording my research projects, ideas and learning notes in this website.
+  Hi this is Sidong (or you can just call me Stone). I am recording my research projects, ideas and learning notes in this website. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: academic-website, portfolio-website # add your own keywords or leave empty
+keywords: academic-website, portfolio-website  # add your own keywords or leave empty
+
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: infofusion.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://stonezhng.github.io # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
-impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
 
 # -----------------------------------------------------------------------------
 # RSS Feed
 # -----------------------------------------------------------------------------
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
+
+rss_icon: true
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -61,10 +62,13 @@ max_width: 930px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-# see https://schema.org/docs/faq.html for more information
 serve_og_meta: false # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
 
 github_username: stonezhng # your GitHub user name
 gitlab_username: # your GitLab user name
@@ -102,20 +106,28 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
+contact_note: >
+  Mostly reachable via email
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema.org
+# -----------------------------------------------------------------------------
+# Display links to the page with a preview object on social media.
+# see https://schema.org/docs/faq.html for more information
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_schema_org: false # Include Schema.org in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
+
+
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-# For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
-# and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
-google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
-cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
-pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
-openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+google_analytics:  # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
+cronitor_analytics:  # cronitor RUM analytics site ID (format: XXXXXXXXX)
 
-# For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: # your google-site-verification ID (Google Search Console)
-bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+google_site_verification:  # your google-site-verification ID (Google Search Console)
+bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -125,7 +137,6 @@ blog_name: Writing is Fun # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
 blog_description: recording my ideas and learning notes
 permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
@@ -136,7 +147,8 @@ related_blog_posts:
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
+# Follow instructions on https://giscus.app/ to setup for your repo to fill out
+# the information below.
 giscus:
   repo: stonezhng/stonezhng.github.io    # <your-github-user-name>/<your-github-repo-name>
   repo_id: R_kgDOKbEGyA
@@ -157,36 +169,91 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-
-# -----------------------------------------------------------------------------
-# Newsletter
-# -----------------------------------------------------------------------------
-
-newsletter:
-  enabled: false
-  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
-  # https://loops.so/docs/forms/custom-form
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: true
   news:
     defaults:
       layout: post
     output: true
+    permalink: /news/:path/
   projects:
     output: true
+    permalink: /projects/:path/
+
+announcements:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
+
+
+# # -----------------------------------------------------------------------------
+# # Jekyll settings
+# # -----------------------------------------------------------------------------
+
+# # Markdown and syntax highlight
+# markdown: kramdown
+# highlighter: rouge
+# kramdown:
+#   input: GFM
+#   syntax_highlighter_opts:
+#     css_class: 'highlight'
+#     span:
+#       line_numbers: false
+#     block:
+#       line_numbers: false
+#       start_line: 1
+
+# # Includes & excludes
+# include: ['_pages']
+# exclude:
+#   - bin
+#   - Gemfile
+#   - Gemfile.lock
+#   - vendor
+# keep_files:
+#   - CNAME
+#   - .nojekyll
+#   - .git
+
+# # Plug-ins
+# plugins:
+#   - jekyll-archives
+#   - jekyll-diagrams
+#   - jekyll-email-protect
+#   - jekyll-feed
+#   - jekyll-get-json
+#   - jekyll-imagemagick
+#   - jekyll-jupyter-notebook
+#   - jekyll-link-attributes
+#   - jekyll-minifier
+#   - jekyll-paginate-v2
+#   - jekyll/scholar
+#   - jekyll-sitemap
+#   - jekyll-toc
+#   - jekyll-twitter-plugin
+#   - jemoji
+
+# # Sitemap settings
+# defaults:
+#   - scope:
+#       path: "assets"
+#     values:
+#       sitemap: false
+
+# sass:
+#   style: compressed
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -277,6 +344,7 @@ terser:
   compress:
     drop_console: true
 
+
 # -----------------------------------------------------------------------------
 # Jekyll Archives
 # -----------------------------------------------------------------------------
@@ -293,6 +361,7 @@ jekyll-archives:
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -377,12 +446,11 @@ external_links:
   target: _blank
   exclude:
 
+
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 
-# MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
-#   convert -version
 imagemagick:
   enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
@@ -396,22 +464,37 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
   output_formats:
-    webp: "-quality 85"
+    webp: "-resize 800x"
 
-# Lazy loading images
-#   If you enable lazy loading, all images will add the loading="lazy" attribute.
-#   This will make your site load faster, but it may not be supported in all browsers.
-#   You can also set loading="" to other values for specific images to override the default behavior.
-#   Options: "auto", "eager", "lazy"
-#   See https://web.dev/browser-level-image-lazy-loading/ for more information.
-lazy_loading_images: true # enables lazy loading of images (recommended)
+# -----------------------------------------------------------------------------
+# Jekyll Diagrams
+# -----------------------------------------------------------------------------
+
+jekyll-diagrams:
+    # configuration, see https://github.com/zhustec/jekyll-diagrams.
+    # feel free to comment out this section if not using jekyll diagrams.
+
 
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 
+# enable_google_analytics:    false  # enables google analytics
+# enable_cronitor_analytics: false  # enables cronitor RUM analytics
+# enable_google_verification: false  # enables google site verification
+# enable_bing_verification:   false  # enables bing site verification
+# enable_masonry:             true   # enables automatic project cards arrangement
+# enable_math:                true   # enables math typesetting (uses MathJax)
+# enable_tooltips:            false  # enables automatic tooltip links generated
+#                                    # for each section titles on pages and posts
+# enable_darkmode:            true   # enables switching between light/dark modes
+# enable_navbar_social:       false  # enables displaying social links in the
+#                                    # navbar on the about page
+# enable_project_categories:  true   # enables categorization of projects into
+#                                    # multiple categories
+# enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+# enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
 enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
@@ -427,6 +510,29 @@ enable_project_categories: true # enables categorization of projects into multip
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
+
+# # -----------------------------------------------------------------------------
+# # Library versions
+# # -----------------------------------------------------------------------------
+
+# bootstrap-table:
+#   version: "1.22.1"
+# jquery:
+#   version: "3.6.0"
+#   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+# mathjax:
+#   version: "3.2.0"
+# masonry:
+#   version: "4.2.2"
+#   integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+# mdb:
+#   version: "4.20.0"
+#   integrity:
+#     css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+#     js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+# medium_zoom:
+#   version: "1.0.8"
+#   integrity: "sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8="
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -664,7 +770,6 @@ third_party_libraries:
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
-
 jsonresume:
   - basics
   - work
