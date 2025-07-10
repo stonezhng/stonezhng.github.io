@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Audio-Visual Speech Separation via Bottleneck Iterative Network 
-img: assets/img/adforecasting/MultimodalFusion4MultimediaAnalysis.png
+img: assets/img/avssbin/MultimodalFusion4MultimediaAnalysis.png
 importance: 1
 category: academic
 bibliography:
@@ -21,14 +21,14 @@ up to 74% training time and 80% GPU inference time. Our code is available on [Gi
 Intuition
 =======
 
-<img src="/assets/img/avssbing/avssmotive.pdf" width="800"/>
+<img src="/assets/img/avssbin/avssmotive.pdf" width="800"/>
 
 A traditional fusion method focuses on learning representations from unimodal inputs and fusion spaces (blue arrows in the plot), but lacks bringing the fusion and late representation information back to the early embedding space (black arrows with the question marks in the plot). 
 
 This backward connection can be important. Consider an audio-visual speech separation (AVSS) task where For example, a female speaker says "WE MUST ADOPT THAT WAY OF" while the other
 female speaker says "THEY’RE LIKE THE BASEBALL SCOUTS 20 YEARS", but because of the distortion from the noise and the tones of the two speakers, the two phrases sound close to each other at the beginning words "WE MUST" and "THEY’RE". With no backward connection, the required  information at the early stage might be lost or compressed too much to be recovered correctly in the final fused latent representations. Meanwhile, a backward connection adds back the fused late latent representation to the original embeddings as residuals, then process the combined reprenstation again to get a refined used latent representation, so the early information is constantly added to avoid information loss.
 
-<img src="/assets/img/avssbing/avssmotive2.pdf" width="800"/>
+<img src="/assets/img/avssbin/avssmotive2.pdf" width="800"/>
 
 
 Audio Samples
