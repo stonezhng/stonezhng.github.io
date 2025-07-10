@@ -335,6 +335,15 @@ ddict = DatasetDict({"train": load_dataset("train", data_dir="train")["train"], 
 ddict.push_to_hub("stonezh/PairedMNIST")  # <- I am using my online repo id here
 ```
 
+An explanation of the load_dataset method from <https://huggingface.co/docs/datasets/v1.1.1/loading_datasets.html#using-a-custom-dataset-loading-script>
+
+```python
+>>> from datasets import load_dataset
+>>> dataset = load_dataset('PATH/TO/MY/LOADING/SCRIPT', data_files='PATH/TO/MY/FILE')
+```
+
+
+
 # Reference
  * <https://huggingface.co/docs/datasets/en/about_dataset_features> : Official explanation on types of data features suppported by HuggingFace
  * <https://huggingface.co/docs/datasets/en/image_dataset> : HuggingFace official image dataset creation tutorial, helpful if you are uploading raw images, but if uploading just latent features then `datasets.Image()` does not work
