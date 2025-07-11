@@ -3,7 +3,7 @@ layout: page
 title: Audio-Visual Speech Separation via Bottleneck Iterative Network 
 img: assets/img/avssbin/MultimodalFusion4MultimediaAnalysis.png
 importance: 1
-category: Academic
+category: academic
 bibliography:
 - /assets/ref/avssbin.bib
 ---
@@ -35,10 +35,16 @@ Audio Samples
 =============
 
 
-| Audio Mixture | Ground Truth Text | Clean Audio | AVLIT Output | BIN Output |
+
+  <div class="col-sm mt-3 mt-md-0">
+         {% include audio.liquid path="https://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/mixture_noisy.wav" controls=true %}
+  </div>
+
+
+<!-- | Audio Mixture | Ground Truth Text | Clean Audio | AVLIT Output | BIN Output |
 | ------------- | ----------------- | ----------- | ------------ | ---------- |
 | {% include audio.liquid path="https://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/mixture_noisy.wav" controls=true %} | WE MUST ADOPT THAT WAY OF <br> THEY’RE LIKE THE BASEBALL SCOUTS 20 YEARS | {% include audio.liquid path="http://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/clean_spk1.wav" controls=true %} <br> {% include audio.liquid path="http://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/clean_spk2.wav" controls=true %} | {% include audio.liquid path="https://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/avlit_early_sep_spk1.wav" controls=true %} <br> {% include audio.liquid path="https://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/avlit_early_sep_spk2.wav" controls=true %}| {% include audio.liquid path="http://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/profusion_sep_spk1.wav" controls=true %} <br> {% include audio.liquid path="http://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/profusion_sep_spk2.wav" controls=true %} |
-
+ -->
 
 <!-- <img src="/assets/img/adforecasting/mri_degeneration.png" width="800"/> -->
 

@@ -3,7 +3,7 @@ layout: page
 title: A Deep Learning Approach to Early Alzheimer’s Forecasting in the Wild
 img: assets/img/adforecasting/titleimg.png
 importance: 1
-category: Academic
+category: academic
 bibliography:
 - /assets/ref/adforecasting.bib
 ---

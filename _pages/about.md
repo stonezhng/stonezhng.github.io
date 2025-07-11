@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://www.cics.umass.edu/research/group/information-fusion-lab'>Information Fusion Lab @UMass Amherst CICS</a>.<!-- Address. Contacts. Moto. Etc.-->
 
