@@ -34,8 +34,7 @@ female speaker says "THEY’RE LIKE THE BASEBALL SCOUTS 20 YEARS", but because o
 Audio Samples
 =============
 
-<div class="container">
-	<!-- row title -->
+<!-- <div class="container">
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
          Audio Mixture
@@ -53,7 +52,6 @@ Audio Samples
          BIN Output
     </div>
     <div class="w-100"></div>
-    <!-- first sample -->
     <div class="col-sm mt-3 mt-md-0">
          {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/mixture_noisy.wav" controls=true %}
   	</div>
@@ -68,24 +66,60 @@ Audio Samples
   	</div>
   	<div class="col-sm mt-3 mt-md-0">
          {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/profusion_sep_spk1.wav" controls=true %} <br> {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/profusion_sep_spk2.wav" controls=true %}
+  	</div>
+
+</div>
+ -->
+
+ <div class="container">
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+         Audio Mixture
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/mixture_noisy.wav" controls=true %}
   	</div>
   	<div class="w-100"></div>
-    <!-- second sample -->
     <div class="col-sm mt-3 mt-md-0">
-         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/mixture_noisy.wav" controls=true %}
-  	</div>
-  	<div class="col-sm mt-3 mt-md-0">
-         WE MUST ADOPT THAT WAY OF <br> THEY’RE LIKE THE BASEBALL SCOUTS 20 YEARS
+         Ground Truth Text
     </div>
     <div class="col-sm mt-3 mt-md-0">
-         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/clean_spk1.wav" controls=true %} <br> {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/clean_spk2.wav" controls=true %}
+         WE MUST ADOPT THAT WAY OFTHEY’RE LIKE THE BASEBALL SCOUTS 20 YEARS
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+         THEY’RE LIKE THE BASEBALL SCOUTS 20 YEARS
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+         Clean Audio
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/clean_spk1.wav" controls=true %}
   	</div>
   	<div class="col-sm mt-3 mt-md-0">
-         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/avlit_early_sep_spk1.wav" controls=true %} <br> {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/avlit_early_sep_spk2.wav" controls=true %}
+  		% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/clean_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+         AVLIT Output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/avlit_early_sep_spk1.wav" controls=true %}
   	</div>
   	<div class="col-sm mt-3 mt-md-0">
-         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/profusion_sep_spk1.wav" controls=true %} <br> {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/profusion_sep_spk2.wav" controls=true %}
+  		{% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/avlit_early_sep_spk2.wav" controls=true %}
   	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+         BIN Output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/profusion_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/profusion_sep_spk2.wav" controls=true %}
+  	</div>
+  	<div class="w-100"></div>
 </div>
 
 
