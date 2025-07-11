@@ -37,7 +37,7 @@ Audio Samples
 
 
   <div class="col-sm mt-3 mt-md-0">
-         {% include audio.liquid path="https://github.com/Information-Fusion-Lab-Umass/BottleneckIterativeNetwork/blob/main/sample_audio/WEMUST%2BTHEYRELIKE/mixture_noisy.mp3" controls=true %}
+         {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/mixture_noisy.wav" controls=true %}
   </div>
 
 
