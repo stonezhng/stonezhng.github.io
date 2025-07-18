@@ -137,6 +137,73 @@ Audio Samples
 </div>
 
 
+### Case 2: All models fail to separate the correct audio
+
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        Audio Mixture
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/mixture_noisy.wav" controls=true %}
+  	</div>
+  	<div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        Ground Truth Text
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        THIS ECONOMY WON'T WORK AND
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        AND YOU WALK AROUND AND IT POINTS
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        Clean Audio
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/clean_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/clean_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        AVLIT Output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/avlit_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/avlit_sep_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        RTFS-Net output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/rtfs_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/rtfs_sep_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        BIN Output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/profusion_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/THISECO+ANDYOU/profusion_sep_spk2.wav" controls=true %}
+  	</div>
+  	<div class="w-100"></div>
+</div>
+
+
+
 
 <!-- | Audio Mixture | Ground Truth Text | Clean Audio | AVLIT Output | BIN Output |
 | ------------- | ----------------- | ----------- | ------------ | ---------- |
