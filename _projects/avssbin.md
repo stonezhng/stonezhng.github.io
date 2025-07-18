@@ -137,7 +137,76 @@ Audio Samples
 </div>
 
 
-### Case 2: All models fail to separate the correct audio
+
+### Case 2: BIN separates the audio with some flaws, AVLIT fails to separate the audio, RTFS-Net assigns the separated audio to the wrong person
+
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        Audio Mixture
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/mixture_noisy.wav" controls=true %}
+  	</div>
+  	<div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        Ground Truth Text
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        I MAY NEVER GO TO YOUR HOUSE YOU MAY
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        HOW CAN WE GET SO MUCH INFO
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        Clean Audio
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/clean_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/clean_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        AVLIT Output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/avlit_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/avlit_sep_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        RTFS-Net output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/rtfs_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/rtfs_sep_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        BIN Output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/profusion_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/HOWCAN+IMAY/profusion_sep_spk2.wav" controls=true %}
+  	</div>
+  	<div class="w-100"></div>
+</div>
+
+
+
+
+### Case 3: All models fail to separate the audio
 
 
 
