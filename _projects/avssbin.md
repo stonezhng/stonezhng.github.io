@@ -71,6 +71,10 @@ Audio Samples
 </div>
  -->
 
+### Case 1: BIN avoids the separation distortion at the begining and in the middle brought by AVLIT and RTFS-Net
+
+
+
  <div class="container">
   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -108,6 +112,16 @@ Audio Samples
   	</div>
   	<div class="col-sm mt-3 mt-md-0">
   		{% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/avlit_early_sep_spk2.wav" controls=true %}
+  	</div>
+    <div class="w-100"></div>
+    <div class="col-sm mt-3 mt-md-0">
+        RTFS-Net output
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/rtfs_sep_spk1.wav" controls=true %}
+  	</div>
+  	<div class="col-sm mt-3 mt-md-0">
+  		{% include audio.liquid path="assets/audio/avssbin/WEMUST+THEYRELIKE/rtfs_sep_spk2.wav" controls=true %}
   	</div>
     <div class="w-100"></div>
     <div class="col-sm mt-3 mt-md-0">
