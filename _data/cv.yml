@@ -44,7 +44,7 @@
          - We both train CNN from scratch and finetune foundation models as two representation learning models
          - We optimize the procedure of training Alzheimer's forecasting model to include two stages with partial model parameter freezing for stabler validation performance during training process
          - We constructed a representative subset from the ADNI dataset aligned with the TADPOLE challenge, consisting of 1,183 patients for training, 169 for validation, and 336 for testing
-        - We evaluate the forecasting performance using both micro F1-score on CN-MCI-AD forecasting and the precision of capturing MCI to AD transition timing across 100 repeated experiments to ensure statistical significance
+         - We evaluate the forecasting performance using both micro F1-score on CN-MCI-AD forecasting and the precision of capturing MCI to AD transition timing across 100 repeated experiments to ensure statistical significance
 
     - title: "Encoding Domain Insights into Multi-modal Fusion: Improved Performance at the Cost of Robustness"
       institution: UMass Amherst’s College of Information and Computer Sciences 

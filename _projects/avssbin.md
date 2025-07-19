@@ -71,7 +71,7 @@ Audio Samples
 </div>
  -->
 
-### Case 1: BIN avoids the separation distortion at the begining and in the middle brought by AVLIT and RTFS-Net
+<h3>Case 1: BIN avoids the separation distortion at the begining and in the middle brought by AVLIT and RTFS-Net</h3>
 
 
 
@@ -138,7 +138,7 @@ Audio Samples
 
 
 
-### Case 2: BIN separates the audio with some flaws, AVLIT fails to separate the audio, RTFS-Net assigns the separated audio to the wrong person
+<h3>Case 2: BIN separates the audio with some flaws, AVLIT fails to separate the audio, RTFS-Net assigns the separated audio to the wrong person</h3>
 
 
 
@@ -206,7 +206,7 @@ Audio Samples
 
 
 
-### Case 3: All models fail to separate the audio
+<h3>Case 3: All models fail to separate the audio</h3>
 
 
 
