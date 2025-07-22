@@ -8,6 +8,8 @@ bibliography:
 - /assets/ref/avssbin.bib
 ---
 
+Presented in ICML 2025 Workshop on Machine Learning for Audio.
+
 
 Introduction
 ============
