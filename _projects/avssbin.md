@@ -31,6 +31,22 @@ female speaker says "THEY’RE LIKE THE BASEBALL SCOUTS 20 YEARS", but because o
 <img src="/assets/img/avssbin/avssmotive2.png" width="800"/>
 
 
+Paper Citation
+==============
+
+```
+@misc{zhang2025audiovisualspeechseparationbottleneck,
+      title={Audio-Visual Speech Separation via Bottleneck Iterative Network}, 
+      author={Sidong Zhang and Shiv Shankar and Trang Nguyen and Andrea Fanelli and Madalina Fiterau},
+      year={2025},
+      eprint={2507.07270},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2507.07270}, 
+}
+```
+
+
 Audio Samples
 =============
 
