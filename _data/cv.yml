@@ -27,46 +27,65 @@
 
   contents:
 
-    - title: "Audio-Visual Speech Separation via Bottleneck Iterative Network"
-      institution: UMass Amherst’s College of Information and Computer Sciences & Dolby Laboratories
-      year: Feb. 2024 - Sep. 2024
-      description: 
-         - Accepted to ICML 2025 Workshop on Machine Learning for Audio
-         - We work on audio-visual speech separation on noisy audio mixtures of NTCD-TIMIT and LRS3 data set
-         - We propose a novel multimodal fusion framework on audio and video modality with a bottleneck iterative structure
-         - Our proposed model outperforms state-of-the-art on SI-SDRi and only requires 50\% of SOTA training time
+    - title: "Video2Reaction: Training Foundation Video Models to Predict Audience Reaction"
+      institution: UMass Amherst's College of Information and Computer Sciences
+      year: Feb. 2026 - Apr. 2026
+      description:
+        - Accepted to CVPR 2026 Workshop on Emerging Directions in Data for Multimodal Foundation Models
+        - Built on V2R, a novel dataset of audience emotional reactions to movie clips with distributional labels across 21 emotion categories
+        - Developed a cross-taxonomy emotion transfer pipeline that fine-tunes VLMs on V2R via word-token scoring, enabling zero-shot transfer to VCE with up to +0.269 top-3 accuracy gain over baseline
+        - Showed that V2R-pretrained VLMs (LLaVA-NeXT-Video-7B, Qwen2.5-VL-7B) match VideoMAE trained on the full 50K-sample target domain using only 1% of its training data
 
-    - title: "Longitudinal Multimodal Modeling for Alzheimer’s Early Detection in the Wild"
-      institution: UMass Amherst’s College of Information and Computer Sciences
+    - title: "Audio-Visual Speech Separation via Bottleneck Iterative Network"
+      institution: UMass Amherst's College of Information and Computer Sciences & Dolby Laboratories
+      year: Feb. 2024 - Sep. 2024
+      description:
+        - Accepted to ICML 2025 Workshop on Machine Learning for Audio
+        - Addressed audio-visual speech separation on noisy mixtures from NTCD-TIMIT and LRS3
+        - Proposed a multimodal fusion framework combining audio and visual modalities via a bottleneck iterative architecture
+        - Achieved state-of-the-art SI-SDRi while reducing training time by 50% compared to prior SOTA
+        - Project webpage: https://stonezhng.github.io/projects/avssbin/
+
+    - title: "Longitudinal Multimodal Modeling for Alzheimer's Early Detection"
+      institution: UMass Amherst's College of Information and Computer Sciences
       year: Sep. 2020 - July 2025
       description:
-         - We introduce information theory-based unsupervised representation learning on brain MRIs as a complement to risk factors, with an estimated mutual information value to evaluate the strength of the dependency to risk factors
-         - We both train CNN from scratch and finetune foundation models as two representation learning models
-         - We optimize the procedure of training Alzheimer's forecasting model to include two stages with partial model parameter freezing for stabler validation performance during training process
-         - We constructed a representative subset from the ADNI dataset aligned with the TADPOLE challenge, consisting of 1,183 patients for training, 169 for validation, and 336 for testing
-         - We evaluate the forecasting performance using both micro F1-score on CN-MCI-AD forecasting and the precision of capturing MCI to AD transition timing across 100 repeated experiments to ensure statistical significance
+        - Submitting to Medical Image Analysis
+        - Showed that task-agnostic representations learned from T1-weighted brain MRIs via mutual information maximization capture knowledge predictive of cognitive decline scores
+        - Trained a CNN from scratch and fine-tuned BiomedCLIP as two representation learning backbones
+        - Designed a staged training strategy for an existing AD forecasting model, stabilizing performance on small validation splits
+        - Evaluated using micro F1 on CN/MCI/AD classification and MCI-to-AD transition timing precision across 100 repeated experiments for statistical robustness
+        - Task-agnostic MRI representations from both CNN and BiomedCLIP improved 2-year forecasting F1 and transition timing accuracy
+
+    - title: "Understanding 3D Brain MRI Scans in Foundation Modeling"
+      institution: UMass Amherst's College of Information and Computer Sciences
+      year: Feb. 2026 -
+      description:
+        - Ongoing work
+        - Existing foundation models (BiomedCLIP, MedGemma) use 2D medical image encoders, with 3D extensions largely treating volumes as sequences of 2D slices — losing inter-slice structural context
+        - Proposing native 3D conv patch embeddings to better capture volumetric structure in brain MRIs, where information is equally distributed across all three axes
+        - Fine-tuning BiomedCLIP and MedSigLIP image encoders with 3D conv patch embedding layers on brain MRI data
+        - Applying atlas-guided flexible patch sizing, assigning finer-grained patches to cognition-relevant regions (e.g., hippocampi) for cognitive state fine-tuning tasks
 
     - title: "Encoding Domain Insights into Multi-modal Fusion: Improved Performance at the Cost of Robustness"
-      institution: UMass Amherst’s College of Information and Computer Sciences 
+      institution: UMass Amherst's College of Information and Computer Sciences
       year: Jan. 2025 – May 2025
       description:
         - Accepted to ICML 2025 Workshop on Methods and Opportunities at Small Scale
-        - We work on comparing fusion methods with and without domain knowledge embedded in the model structure
-        - We conduct experiments on MMSD dataset with both the original task of detecting sarcasm and a synthetic task to control the level of domain knowledge, with additional Gaussian noise added to the inputs to examine robustness
-        - We find that aligning fusion design with priors boosts clean-data accuracy with limited data but significantly diminishes robustness to noisy inputs
+        - Compared fusion architectures with and without domain knowledge embedded in the model structure
+        - Evaluated on MMSD for sarcasm detection and a synthetic task with controllable domain knowledge levels; added Gaussian noise to inputs to probe robustness
+        - Found that aligning fusion design with domain priors improves clean-data accuracy under limited data but significantly degrades robustness to noisy inputs
 
-   
-    - title: "Clustered Vertical Attention for Irregular Time Series Modelling"
-      institution: UMass Amherst’s College of Information and Computer Sciences
-      year: Feb. 2019 - May. 2019
+    - title: "Video2Reaction: Mapping Video to Audience Reaction in the Wild"
+      institution: UMass Amherst's College of Information and Computer Sciences
+      year: Feb. 2025 - May 2025
       description:
-        - Results were submitted to ICML 2019 TimeSeriesWorkshop
-        - We worked on PhysioNet Challenge 2012 data set
-        - We improved the prediction accuracy of the in-hospital survival of ICU patients via existing imputation methods
-        - We ran Minimum Spanning Tree algorithm to determine the most correlated imputed clusters
-        - We trained separate Attention models for clusters and predicted on a Long Short-term Memory Attention model
-        - The model got accuracy improvements of 1.5%, 1.3% and 1.8% on 3 different imputation methods
-
+        - Under review at ECCV
+        - Curated a multimodal dataset mapping short movie clips to distributional emotional reactions of real-world viewers
+        - Collected movie clips and YouTube comments, extracting per-clip emotion distributions from viewer responses
+        - Deployed 3 LLMs to rephrase and independently label comment emotions; applied majority voting per comment and discarded samples with no consensus across all three models
+        - Established a comprehensive benchmark for distributional video-to-reaction modeling
+        
 - title: Skill
   type: list
   contents:
